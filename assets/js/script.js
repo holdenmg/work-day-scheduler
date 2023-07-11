@@ -42,9 +42,9 @@ $(document).ready(function () {
     var nowHour = parseInt(dayjs().format('H'));
 //Compare current time and block time and update style as neccessary
     if(nowHour > blockHour){
-      $(this).removeClass("present")
-     $(this).removeClass("future") 
-      $(this).addClass("past");
+    $(this).removeClass("present")
+    $(this).removeClass("future") 
+    $(this).addClass("past");
     }
     else if(nowHour === blockHour){
     $(this).removeClass("past")
@@ -56,11 +56,11 @@ $(document).ready(function () {
       $(this).removeClass("pastt") 
       $(this).addClass("future");
     }
-});
+  });
 //Display current time in header
-var rightNow = dayjs().format('dddd, MMMM Do');
-$("#currentDay").text(rightNow);
-displaySched() 
+  var rightNow = dayjs().format('dddd, MMMM Do');
+  $("#currentDay").text(rightNow);
+  displaySched() 
 });
 
 
