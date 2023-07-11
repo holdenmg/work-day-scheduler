@@ -1,4 +1,4 @@
-# work-day-scheduler
+# Work-Day-Scheduler
 
 Challenge 5: Work-Day-Scheduler
 ## Description
@@ -6,7 +6,7 @@ This web page was built to serve as a simple work-day-scheduler, allowing for th
 
 ## URL
 
-
+https://holdenmg.github.io/work-day-scheduler/
 
 ## Screenshot
 <img src=assets/images/screenshot1.png> 
