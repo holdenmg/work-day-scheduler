@@ -1,9 +1,10 @@
 
 
 
-
 $(document).ready(function () {
   
+//var advancedFormat = require('dayjs/plugin/advancedFormat');
+//dayjs.extend(advancedFormat);
   //Listener for 
   $( ".saveBtn" ).on( "click", function(event) {
     var section = $(event.target).closest("section");
@@ -63,7 +64,7 @@ $("section").each(function(){
 });
   // TODO: Add code to display the current date in the header of the page.
   
-var rightNow = dayjs().format('dddd, MMMM D');
+var rightNow = dayjs().format('dddd, MMMM Do');
 $("#currentDay").text(rightNow);
 displaySched()
   
