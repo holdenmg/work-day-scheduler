@@ -23,18 +23,18 @@ $(document).ready(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
-  $( ".saveBtn" ).on( "click", function() {
-    alert( "Handler for `click` called." );
-    var text = $().closest("textarea")
-    // get the text
-
-var key = $(this).attr('id');
-// set the item in localStorage
-localStorage.setItem(key, text);
-
-// alert the value to check if we got it
-alert(localStorage.getItem(key));
+  $( ".saveBtn" ).on( "click", function(event) {
+    var section = $(event.target).closest("section");
+    var key = section.attr("id");
+    console.log(key);
+    var textarea = section.find("textarea");
+    var text = textarea.val();
+    console.log(text)
+    localStorage.setItem(key, text);
+    alert(localStorage.getItem(key))
   });
+
+  
   // TODO: Add code to display the current date in the header of the page.
   
     var rightNow = dayjs().format('dddd, MMMM D');
