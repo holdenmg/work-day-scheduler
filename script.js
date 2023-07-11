@@ -1,10 +1,12 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+saveButton = $('#saveBtn');
+
 $(document).ready(function () {
   // TODO: Add a listener for click events on the save button. This code should
 
-  
+
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
   // function? How can DOM traversal be used to get the "hour-x" id of the
@@ -21,5 +23,23 @@ $(document).ready(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
+  $( ".saveBtn" ).on( "click", function() {
+    alert( "Handler for `click` called." );
+    var text = $().closest("textarea")
+    // get the text
+
+var key = $(this).attr('id');
+// set the item in localStorage
+localStorage.setItem(key, text);
+
+// alert the value to check if we got it
+alert(localStorage.getItem(key));
+  });
   // TODO: Add code to display the current date in the header of the page.
+  
+    var rightNow = dayjs().format('dddd, MMMM D');
+    $("#currentDay").text(rightNow);
+  
 });
+
+
