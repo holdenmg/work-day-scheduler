@@ -18,7 +18,7 @@ N/A
 
 ## Usage
 
-Clicking on the start quiz button will present first question and start timer. If answer is incorrect 10 seconds will be deducted from timer. When all questions have been answered or timer reaches 0 player can enter their initials into score board. Score board is viewable by clicking view score. Clear score button will clear all saved scores from local storage.
+Tasks can be typed into hourly blocks. When the corresponding save button is pressed the text from that textarea will be stored in local storage. A confirmation message will appear each time save button is pressed. Text is recalled from local storage upon reloading page. The color of the hour blocks and the header update in real time (on the hour) to indicate past (grey), future (green), and present (red).
 ## Credits
 
 
